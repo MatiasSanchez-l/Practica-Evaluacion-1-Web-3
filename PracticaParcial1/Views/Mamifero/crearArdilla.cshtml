@@ -1,5 +1,21 @@
-﻿@{
+﻿@model PracticaParcial1.Models.Ardilla
+@{
     ViewData["Title"] = "Crear Ardilla";
 }
 
 <h1>Creacion ardilla</h1>
+<form action="/Mamifero/crearArdilla" method="post" class="form-control">
+    <div class="">
+        Raza: <input type="text" asp-for="Raza" value="" />
+        <span asp-validation-for="Raza"></span>
+    </div>
+    <div class="form-group">
+        Color: <input type="text" asp-for="Color" value="" />
+        <span asp-validation-for="Color"></span>
+    </div>
+    <div class="form-group">
+        Peso: <input type="text" asp-for="Peso" value="" />
+        <span asp-validation-for="Peso"></span>
+    </div>
+    <input type="submit" class="btn btn-warning" />
+</form>

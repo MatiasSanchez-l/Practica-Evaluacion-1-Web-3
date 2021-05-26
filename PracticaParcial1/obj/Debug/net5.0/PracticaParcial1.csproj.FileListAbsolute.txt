@@ -361,3 +361,4 @@ C:\Users\matias\source\repos\practicaEvaluacion1\PracticaParcial1\PracticaParcia
 C:\Users\matias\source\repos\practicaEvaluacion1\PracticaParcial1\PracticaParcial1\obj\Debug\net5.0\Razor\Views\Mamifero\crearMono.cshtml.g.cs
 C:\Users\matias\source\repos\practicaEvaluacion1\PracticaParcial1\PracticaParcial1\obj\Debug\net5.0\Razor\Views\Mamifero\listaMamiferos.cshtml.g.cs
 C:\Users\matias\source\repos\practicaEvaluacion1\PracticaParcial1\PracticaParcial1\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\matias\source\repos\practicaEvaluacion1\PracticaParcial1\PracticaParcial1\obj\Debug\net5.0\Razor\Views\Mamifero\VerDetalle.cshtml.g.cs

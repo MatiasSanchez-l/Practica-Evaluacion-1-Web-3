@@ -1,4 +1,26 @@
-﻿@{
+﻿@model List<Mamifero>
+@{
     ViewData["Title"] = "Lista";
 }
 <h1>Listar mamiferos</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Raza</th>
+            <th>Color</th>
+            <th>Peso</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Mamifero mamife in Model)
+        {
+            <tr>
+                <td><a href="/Mamifero/VerDetalle?Id=@mamife.Id">@mamife.Id</a></td>
+                <td>@mamife.Raza</td>
+                <td>@mamife.Color</td>
+                <td>@mamife.Peso</td>
+            </tr>
+        }
+    </tbody>
+</table>

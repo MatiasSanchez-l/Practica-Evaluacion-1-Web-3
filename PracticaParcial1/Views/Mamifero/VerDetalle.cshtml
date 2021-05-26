@@ -1,0 +1,14 @@
+﻿@{
+    Mamifero mamifero = (Mamifero)ViewData["mamifero"];
+    string mensajeMamifero = (mamifero.mensajeMetodo) != null ? (mamifero.mensajeMetodo) : "No hago ninguna accion";
+}
+
+<div>
+    <h1>Mamifero</h1>
+    <h4>@mamifero.Raza</h4>
+    <p class="">@mensajeMamifero</p>
+    <h4>Hacer accion:</h4>
+    <a class="btn btn-info" href="/Mamifero/HacerAccion?Id=@mamifero.Id&Accion=respirar">respirar</a>
+    <a class="btn btn-info" href="/Mamifero/HacerAccion?Id=@mamifero.Id&Accion=caminar">caminar</a>
+    <a class="btn btn-warning" href="/Mamifero/HacerAccion?Id=@mamifero.Id&Accion=pensar">pensar</a>
+</div>
