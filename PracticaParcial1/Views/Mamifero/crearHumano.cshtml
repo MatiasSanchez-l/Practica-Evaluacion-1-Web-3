@@ -1,0 +1,24 @@
+﻿@model PracticaParcial1.Models.Humano
+@{
+    ViewData["Title"] = "Crear Humano";
+}
+<h1>Creacion Humano</h1>
+<form action="/Mamifero/crearHumano" method="post" class="form-control">
+    <div class="">
+        Raza: <input type="text" asp-for="Raza" value="" />
+        <span asp-validation-for="Raza"></span>
+    </div>
+    <div class="form-group">
+        Color: <input type="text" asp-for="Color" value="" />
+        <span asp-validation-for="Color"></span>
+    </div>
+    <div class="form-group">
+        Peso: <input type="text" asp-for="Peso" value="" />
+        <span asp-validation-for="Peso"></span>
+    </div>
+    <div class="form-group">
+        Email: <input type="text" asp-for="Email" value="" />
+        <span asp-validation-for="Email"></span>
+    </div>
+    <input type="submit" class="btn btn-warning" />
+</form>
